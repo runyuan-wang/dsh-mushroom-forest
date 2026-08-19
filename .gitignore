@@ -1,0 +1,9 @@
+node_modules/
+*.tgz
+artifacts/
+*.log
+.DS_Store
+
+# internal artifacts (not part of the public plugin)
+SPEC.md
+BUILD_REPORT.md

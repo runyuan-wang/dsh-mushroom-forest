@@ -1,0 +1,11 @@
+- insert:
+    - id: mushroom-forest-deepseek-harness
+      name: dsh-mushroom-forest
+      config:
+        mode: grow
+        outputDir: null
+        growOn: turn+tool
+        countBugs: true
+        maxGrowthPerSession: 2000
+        awaitOnFlush: true
+        commandName: garden

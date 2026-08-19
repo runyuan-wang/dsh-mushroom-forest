@@ -1,0 +1,47 @@
+{
+  "name": "dsh-mushroom-forest",
+  "version": "0.1.0",
+  "description": "A DeepSeek Harness plugin that grows a cozy mushroom garden as you work: gentle mushrooms for good turns, red-cap-white-dot bug mushrooms as error markers (not food).",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./garden": "./garden.js",
+    "./whispers": "./whispers.js",
+    "./testing": "./testing.js"
+  },
+  "files": [
+    "index.js",
+    "garden.js",
+    "whispers.js",
+    "testing.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "pack:local": "npm pack --pack-destination ../artifacts"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "mushroom",
+    "garden"
+  ],
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "3.18.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.0.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
